@@ -27,8 +27,10 @@ classifier.fit(X_train, y_train)
 #Predicting the Test set results
 
 y_pred = classifier.predict(X_test)
-np.set_printoptions(precision=2)
-print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),1)),1))
+
+#Un-comment line 32 and line 33 to print the predicted outputs of the test set and the actual results of the test set
+#np.set_printoptions(precision=2)
+#print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),1)),1))
 
 
 #Making the Confusion Matrix
